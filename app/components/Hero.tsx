@@ -30,7 +30,6 @@ const Hero = () => {
 
   return (
     <div className="relative h-screen overflow-hidden">
-      {/* Main Slider */}
       <Swiper
         modules={[Autoplay, Navigation, Pagination, Thumbs]}
         navigation={{
@@ -52,18 +51,15 @@ const Hero = () => {
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
             <div className="relative h-full">
-              {/* Image with gradient overlay */}
               <div
                 className="absolute inset-0 bg-cover bg-center"
                 style={{
                   backgroundImage: `url(${slide.image})`,
                 }}
               >
-                {/* Gradient overlay to make text readable */}
                 <div className="absolute inset-0 bg-gradient-to-b from-green-900/70 to-transparent"></div>
               </div>
 
-              {/* Text overlay */}
               <div className="absolute inset-0 flex flex-col justify-center z-10">
                 <div className="px-6 md:px-16 lg:px-24">
                   <h1 className="text-4xl md:text-6xl font-bold text-white text-left mb-6 max-w-2xl drop-shadow-lg">
@@ -75,7 +71,6 @@ const Hero = () => {
           </SwiperSlide>
         ))}
 
-        {/* Custom Navigation Buttons */}
         <div className="swiper-button-prev absolute left-4 top-1/2 z-20 flex items-center justify-center w-12 h-12 rounded-full bg-white/10 backdrop-blur-sm text-white cursor-pointer hover:bg-white/20 transition-all duration-300">
           <ChevronLeft className="w-6 h-6" />
         </div>
@@ -84,7 +79,6 @@ const Hero = () => {
         </div>
       </Swiper>
 
-      {/* Thumbnails */}
       <Swiper
         onSwiper={setThumbsSwiper}
         spaceBetween={10}
