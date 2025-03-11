@@ -16,6 +16,7 @@
     "@remix-run/serve": "^2.16.0",
     "@types/swiper": "^5.4.3",
     "isbot": "^4.1.0",
+    "lucide-react": "^0.479.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-swiper": "^0.1.5",
