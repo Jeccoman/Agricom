@@ -2,8 +2,7 @@
 import type { MetaFunction } from "@remix-run/node";
 
 import "swiper/css";
-import { Hero } from "~/components/Hero";
-import { Features } from "~/components/Features";
+
 
 export const meta: MetaFunction = () => {
   return [
@@ -16,8 +15,7 @@ export default function LandingPage() {
   return (
     <main className="font-sans">
       {/* Hero Section with Swiper */}
-      <Hero />
-<Features/>
+      
      
     </main>
   );
