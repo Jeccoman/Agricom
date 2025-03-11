@@ -101,7 +101,7 @@ export default function AgriSolutions() {
               </p>
             </div>
             <img
-              src="/placeholder-land.jpg"
+              src="/robust-multi-speed.png"
               alt="Land Preparation"
               className="transition ease-in duration-200 scale-95 group-hover:scale-100 h-20 lg:h-60 object-contain"
             />
