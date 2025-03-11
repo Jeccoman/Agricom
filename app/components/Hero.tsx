@@ -1,32 +1,33 @@
+import { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Navigation, Pagination } from 'swiper/modules';
+import { Autoplay, Navigation, Pagination, Thumbs } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import 'swiper/css/thumbs';
 
 const Hero = () => {
+  const [thumbsSwiper, setThumbsSwiper] = useState(null);
+
   const slides = [
     {
       image: '/agricom-banner-1.png',
-      title: 'Welcome to Agricom',
-      description: 'Transforming agriculture through innovative solutions and sustainable practices'
+      title: 'No 1 farm mechanization company in Tanzania',
     },
     {
       image: '/agricom-banner-2.webp',
-      title: 'Sustainable Farming',
-      description: 'Leading the way in modern agricultural technologies'
+      title: 'Reliable After-Sale Services',
     },
     {
       image: '/agricom-banner-3.webp',
-      title: 'Growing Together',
-      description: 'Building partnerships for a better agricultural future'
+      title: 'Total solution in the Agriculture value chain',
     }
   ];
 
   return (
     <div className="relative h-screen">
       <Swiper
-        modules={[Autoplay, Navigation, Pagination]}
+        modules={[Autoplay, Navigation, Pagination, Thumbs]}
         navigation
         pagination={{ clickable: true }}
         autoplay={{
@@ -34,6 +35,7 @@ const Hero = () => {
           disableOnInteraction: false,
         }}
         loop={true}
+        thumbs={{ swiper: thumbsSwiper }}
         className="h-full w-full"
       >
         {slides.map((slide, index) => (
@@ -43,21 +45,31 @@ const Hero = () => {
                 className="absolute inset-0 bg-cover bg-center"
                 style={{ backgroundImage: `url(${slide.image})` }}
               >
-                <div className="absolute inset-0 bg-black/50"></div>
+                <div className="absolute inset-0 bg-gradient-to-b from-green-900 to-transparent h-full"></div>
               </div>
 
-              <div className="relative z-10 h-full flex flex-col justify-center items-center text-white px-4">
-                <h1 className="text-4xl md:text-6xl font-bold text-center mb-6">
+              <div className="relative z-10 h-full flex flex-col justify-center items-start text-white px-4">
+                <h1 className="text-4xl md:text-6xl font-bold text-start mb-6">
                   {slide.title}
                 </h1>
-                <p className="text-xl md:text-2xl text-center mb-8 max-w-2xl">
-                  {slide.description}
-                </p>
-                <button className="bg-green-600 hover:bg-green-700 px-8 py-3 rounded-full font-semibold transition-colors">
-                  Get Started
-                </button>
               </div>
             </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+
+      <Swiper
+        onSwiper={setThumbsSwiper}
+        spaceBetween={10}
+        slidesPerView={3}
+        freeMode={true}
+        watchSlidesProgress={true}
+        modules={[Thumbs]}
+        className="absolute bottom-0 left-0 right-0 w-full"
+      >
+        {slides.map((slide, index) => (
+          <SwiperSlide key={index}>
+            <img src={slide.image} alt={slide.title} className="object-cover w-full h-20" />
           </SwiperSlide>
         ))}
       </Swiper>
