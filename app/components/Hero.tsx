@@ -1,54 +1,68 @@
-// app/components/HeroCarousel.tsx
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
-import "swiper/css";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Navigation, Pagination } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
-const slides = [
-  {
-    image: "/images/agricom-banner-1.png",
-    title: "No. 1 Farm Mechanization Company",
-    highlight: "Tanzania",
-  },
-  {
-    image: "/images/agricom-banner-2.webp",
-    title: "Reliable After-Sale",
-    highlight: "Services",
-  },
-];
+const Hero = () => {
+  const slides = [
+    {
+      image: '/agricom-banner-1.png',
+      title: 'Welcome to Agricom',
+      description: 'Transforming agriculture through innovative solutions and sustainable practices'
+    },
+    {
+      image: '/agricom-banner-2.webp',
+      title: 'Sustainable Farming',
+      description: 'Leading the way in modern agricultural technologies'
+    },
+    {
+      image: '/agricom-banner-3.webp',
+      title: 'Growing Together',
+      description: 'Building partnerships for a better agricultural future'
+    }
+  ];
 
-export function Hero() {
   return (
-    <section className="relative h-[640px] lg:h-[840px] -translate-y-20">
+    <div className="relative h-screen">
       <Swiper
-        modules={[Autoplay]}
-        autoplay={{ delay: 5000 }}
-        loop
-        className="h-full bg-gradient-to-b from-primary-950 to-primary-500"
+        modules={[Autoplay, Navigation, Pagination]}
+        navigation
+        pagination={{ clickable: true }}
+        autoplay={{
+          delay: 5000,
+          disableOnInteraction: false,
+        }}
+        loop={true}
+        className="h-full w-full"
       >
         {slides.map((slide, index) => (
-          <SwiperSlide key={index} className="!w-full">
-            <div className="relative h-full w-full">
-              {/* Dark overlay gradient */}
-              <div className="absolute inset-0 bg-gradient-to-b from-primary-950/80 via-transparent to-transparent z-10" />
-              
-              <img
-                src={slide.image}
-                alt={slide.title}
-                className="h-full w-full object-cover object-center"
-              />
-              
-              {/* Text Content */}
-              <div className="absolute top-32 lg:top-52 left-4 lg:left-20 text-5xl lg:text-6xl text-white space-y-2 font-bold z-20">
-                <h1 className="leading-tight">
+          <SwiperSlide key={index}>
+            <div className="relative h-full">
+              <div 
+                className="absolute inset-0 bg-cover bg-center"
+                style={{ backgroundImage: `url(${slide.image})` }}
+              >
+                <div className="absolute inset-0 bg-black/50"></div>
+              </div>
+
+              <div className="relative z-10 h-full flex flex-col justify-center items-center text-white px-4">
+                <h1 className="text-4xl md:text-6xl font-bold text-center mb-6">
                   {slide.title}
-                  <br />
-                  <span className="text-secondary">{slide.highlight}</span>
                 </h1>
+                <p className="text-xl md:text-2xl text-center mb-8 max-w-2xl">
+                  {slide.description}
+                </p>
+                <button className="bg-green-600 hover:bg-green-700 px-8 py-3 rounded-full font-semibold transition-colors">
+                  Get Started
+                </button>
               </div>
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
-    </section>
+    </div>
   );
-}
+};
+
+export default Hero;
