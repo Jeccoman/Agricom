@@ -124,7 +124,7 @@ export default function AgriSolutions() {
               </p>
             </div>
             <img
-              src="/placeholder-landscaping.jpg"
+              src="/ripper.png"
               alt="Landscaping"
               className="transition ease-in duration-200 scale-95 group-hover:scale-100 h-20 lg:h-60 object-contain"
             />
@@ -146,7 +146,7 @@ export default function AgriSolutions() {
               </p>
             </div>
             <img
-              src="/placeholder-seeding.jpg"
+              src="/rotary-mulcher.png"
               alt="Seeding & Planting"
               className="transition ease-in duration-200 scale-95 group-hover:scale-100 h-20 lg:h-60 object-contain"
             />
@@ -169,7 +169,7 @@ export default function AgriSolutions() {
               </p>
             </div>
             <img
-              src="/placeholder-protection.jpg"
+              src="/crop-protection.png"
               alt="Crop Protection"
               className="transition ease-in duration-200 scale-95 group-hover:scale-100 h-20 lg:h-60 object-contain"
             />
@@ -193,7 +193,7 @@ export default function AgriSolutions() {
               </p>
             </div>
             <img
-              src="/placeholder-harvesting.jpg"
+              src="/fertilizer-spreader.png"
               alt="Harvesting, Threshing & Storage"
               className="transition ease-in duration-200 scale-95 group-hover:scale-100 h-20 lg:h-60 object-contain"
             />
@@ -215,7 +215,7 @@ export default function AgriSolutions() {
               </p>
             </div>
             <img
-              src="/placeholder-post-harvesting.jpg"
+              src="/post-harvesting.png"
               alt="Post Harvesting"
               className="transition ease-in duration-200 scale-95 group-hover:scale-100 h-20 lg:h-60 object-contain"
             />
