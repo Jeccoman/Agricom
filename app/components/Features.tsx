@@ -10,16 +10,16 @@ export const meta: MetaFunction = () => {
 
 export default function AgriSolutions() {
   return (
-    <div className="min-h-screen bg-background text-foreground transition-colors duration-300">
+    <div className="min-h-screen bg-white text-gray-900">
       <section className="space-y-16 p-4 lg:px-24 lg:py-16">
         {/* Header Section */}
         <div className="flex flex-col items-center justify-center space-y-2 text-center px-4">
-          <div className="gap-1 rounded-full tracking-wide px-3 py-2 text-sm font-medium inline-flex items-center bg-primary-100 dark:bg-primary-900/30 text-primary-600 dark:text-primary-300 ring-0 ring-inset ring-primary-600/5 uppercase whitespace-nowrap">
+          <div className="gap-1 rounded-full tracking-wide px-3 py-2 text-sm font-medium inline-flex items-center bg-primary-100 text-primary-600 ring-0 ring-inset ring-primary-600/5 uppercase whitespace-nowrap">
             Our Solutions
           </div>
           <h1 className="text-2xl lg:text-4xl max-w-xl font-bold">Delivering Solution That Increase Yields</h1>
           <p className="text-xl lg:text-2xl font-bold"></p>
-          <p className="text-sm lg:text-lg max-w-3xl text-muted dark:text-muted-foreground">
+          <p className="text-sm lg:text-lg max-w-3xl text-muted">
             We provide complete solutions for farm mechanization from land preparation to post harvesting with quality
             agricultural commodities and products at their doorstep.
           </p>
@@ -34,13 +34,13 @@ export default function AgriSolutions() {
         <div className="grid sm:grid-cols-2 gap-4">
           {/* Tractors */}
           <Link
-            className="flex flex-col items-center justify-center relative group overflow-hidden p-6 lg:py-12 rounded-xl border-2 border-primary-100 dark:border-primary-800 bg-white dark:bg-gray-900 ring-transparent ring-2 hover:ring-primary-800 dark:hover:ring-primary-400 transition-all"
+            className="flex flex-col items-center justify-center relative group overflow-hidden p-6 lg:py-12 rounded-xl border-2 border-primary-100 bg-white ring-transparent ring-2 hover:ring-primary-800 transition-all"
             data-discover="true"
             to="/"
           >
-            <div className="z-20 p-8 space-y-12 duration-300 absolute top-0 w-full h-full bg-white/50 dark:bg-gray-900/70 backdrop-blur-md opacity-0 group-hover:opacity-100">
-              <h1 className="text-2xl font-bold text-primary dark:text-primary-300">Tractors</h1>
-              <p className="text-lg dark:text-gray-300">
+            <div className="z-20 p-8 space-y-12 duration-300 absolute top-0 w-full h-full bg-white/50 backdrop-blur-md opacity-0 group-hover:opacity-100">
+              <h1 className="text-2xl font-bold text-primary">Tractors</h1>
+              <p className="text-lg">
                 Tractors are the backbone of modern agriculture, providing the power and versatility needed for a wide
                 range of tasks. Our tractors are designed to improve efficiency and productivity on your farm. With
                 powerful engines, advanced transmissions, and a variety of attachments, our tractors can handle
@@ -57,13 +57,13 @@ export default function AgriSolutions() {
 
           {/* Combine Harvesters */}
           <Link
-            className="flex flex-col items-center justify-center relative group overflow-hidden p-6 lg:py-12 rounded-xl border-2 border-primary-100 dark:border-primary-800 bg-white dark:bg-gray-900 ring-transparent ring-2 hover:ring-primary-800 dark:hover:ring-primary-400 transition-all"
+            className="flex flex-col items-center justify-center relative group overflow-hidden p-6 lg:py-12 rounded-xl border-2 border-primary-100 bg-white ring-transparent ring-2 hover:ring-primary-800 transition-all"
             data-discover="true"
             to="/"
           >
-            <div className="z-20 p-8 space-y-12 duration-300 absolute top-0 w-full h-full bg-white/50 dark:bg-gray-900/70 backdrop-blur-md opacity-0 group-hover:opacity-100">
-              <h1 className="text-2xl font-bold text-primary dark:text-primary-300">Combine Harvesters</h1>
-              <p className="text-lg dark:text-gray-300">
+            <div className="z-20 p-8 space-y-12 duration-300 absolute top-0 w-full h-full bg-white/50 backdrop-blur-md opacity-0 group-hover:opacity-100">
+              <h1 className="text-2xl font-bold text-primary">Combine Harvesters</h1>
+              <p className="text-lg">
                 A combine harvester is a versatile machine that efficiently harvests crops like wheat, barley, and
                 soybeans. Our combines are equipped with cutting-edge technology to maximize yield and minimize losses.
                 With features like automatic header height adjustment, advanced threshing systems, and efficient grain
@@ -88,13 +88,13 @@ export default function AgriSolutions() {
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
           {/* Land Preparation */}
           <Link
-            className="flex flex-col items-center justify-center relative group overflow-hidden p-6 lg:py-12 rounded-xl border-2 border-primary-100 dark:border-primary-800 bg-white dark:bg-gray-900 ring-transparent ring-2 hover:ring-primary-800 dark:hover:ring-primary-400 transition-all"
+            className="flex flex-col items-center justify-center relative group overflow-hidden p-6 lg:py-12 rounded-xl border-2 border-primary-100 bg-white ring-transparent ring-2 hover:ring-primary-800 transition-all"
             data-discover="true"
             to="/"
           >
-            <div className="z-20 p-8 space-y-12 duration-300 absolute top-0 w-full h-full bg-white/50 dark:bg-gray-900/70 backdrop-blur-md opacity-0 group-hover:opacity-100">
-              <h1 className="font-bold text-primary dark:text-primary-300 text-xl">Land Preparation</h1>
-              <p className="text-base dark:text-gray-300">
+            <div className="z-20 p-8 space-y-12 duration-300 absolute top-0 w-full h-full bg-white/50 backdrop-blur-md opacity-0 group-hover:opacity-100">
+              <h1 className="font-bold text-primary text-xl">Land Preparation</h1>
+              <p className="text-base">
                 Proper land preparation is crucial for optimal crop growth. Our services include plowing, disking,
                 harrowing, and leveling to create a well-cultivated field. We use advanced techniques and equipment to
                 ensure that your soil is ready to support healthy plant growth.
@@ -110,13 +110,13 @@ export default function AgriSolutions() {
 
           {/* Landscaping */}
           <Link
-            className="flex flex-col items-center justify-center relative group overflow-hidden p-6 lg:py-12 rounded-xl border-2 border-primary-100 dark:border-primary-800 bg-white dark:bg-gray-900 ring-transparent ring-2 hover:ring-primary-800 dark:hover:ring-primary-400 transition-all"
+            className="flex flex-col items-center justify-center relative group overflow-hidden p-6 lg:py-12 rounded-xl border-2 border-primary-100 bg-white ring-transparent ring-2 hover:ring-primary-800 transition-all"
             data-discover="true"
             to="/"
           >
-            <div className="z-20 p-8 space-y-12 duration-300 absolute top-0 w-full h-full bg-white/50 dark:bg-gray-900/70 backdrop-blur-md opacity-0 group-hover:opacity-100">
-              <h1 className="font-bold text-primary dark:text-primary-300 text-xl">Landscaping</h1>
-              <p className="text-base dark:text-gray-300">
+            <div className="z-20 p-8 space-y-12 duration-300 absolute top-0 w-full h-full bg-white/50 backdrop-blur-md opacity-0 group-hover:opacity-100">
+              <h1 className="font-bold text-primary text-xl">Landscaping</h1>
+              <p className="text-base">
                 Enhance the beauty and functionality of your property with our expert landscaping services. From
                 designing and installing stunning gardens to maintaining your outdoor spaces, our team can transform
                 your landscape. We offer a range of services, including lawn care, tree and shrub care, and irrigation
@@ -133,13 +133,13 @@ export default function AgriSolutions() {
 
           {/* Seeding & Planting */}
           <Link
-            className="flex flex-col items-center justify-center relative group overflow-hidden p-6 lg:py-12 rounded-xl border-2 border-primary-100 dark:border-primary-800 bg-white dark:bg-gray-900 ring-transparent ring-2 hover:ring-primary-800 dark:hover:ring-primary-400 transition-all"
+            className="flex flex-col items-center justify-center relative group overflow-hidden p-6 lg:py-12 rounded-xl border-2 border-primary-100 bg-white ring-transparent ring-2 hover:ring-primary-800 transition-all"
             data-discover="true"
             to="/"
           >
-            <div className="z-20 p-8 space-y-12 duration-300 absolute top-0 w-full h-full bg-white/50 dark:bg-gray-900/70 backdrop-blur-md opacity-0 group-hover:opacity-100">
-              <h1 className="font-bold text-primary dark:text-primary-300 text-xl">Seeding &amp; Planting</h1>
-              <p className="text-base dark:text-gray-300">
+            <div className="z-20 p-8 space-y-12 duration-300 absolute top-0 w-full h-full bg-white/50 backdrop-blur-md opacity-0 group-hover:opacity-100">
+              <h1 className="font-bold text-primary text-xl">Seeding &amp; Planting</h1>
+              <p className="text-base">
                 Precise seeding and planting are essential for successful crop production. Our services include seed
                 selection, precise seeding, and efficient planting techniques. We use advanced equipment and techniques
                 to ensure optimal seed placement and germination.
@@ -155,13 +155,13 @@ export default function AgriSolutions() {
 
           {/* Crop Protection */}
           <Link
-            className="flex flex-col items-center justify-center relative group overflow-hidden p-6 lg:py-12 rounded-xl border-2 border-primary-100 dark:border-primary-800 bg-white dark:bg-gray-900 ring-transparent ring-2 hover:ring-primary-800 dark:hover:ring-primary-400 transition-all"
+            className="flex flex-col items-center justify-center relative group overflow-hidden p-6 lg:py-12 rounded-xl border-2 border-primary-100 bg-white ring-transparent ring-2 hover:ring-primary-800 transition-all"
             data-discover="true"
             to="/"
           >
-            <div className="z-20 p-8 space-y-12 duration-300 absolute top-0 w-full h-full bg-white/50 dark:bg-gray-900/70 backdrop-blur-md opacity-0 group-hover:opacity-100">
-              <h1 className="font-bold text-primary dark:text-primary-300 text-xl">Crop Protection</h1>
-              <p className="text-base dark:text-gray-300">
+            <div className="z-20 p-8 space-y-12 duration-300 absolute top-0 w-full h-full bg-white/50 backdrop-blur-md opacity-0 group-hover:opacity-100">
+              <h1 className="font-bold text-primary text-xl">Crop Protection</h1>
+              <p className="text-base">
                 Protect your crops from pests, diseases, and weeds with our comprehensive crop protection solutions. Our
                 experts will assess your specific needs and recommend the most effective treatments. We offer a range of
                 products, including insecticides, fungicides, and herbicides, to safeguard your crops and maximize
@@ -178,15 +178,13 @@ export default function AgriSolutions() {
 
           {/* Harvesting, Threshing & Storage */}
           <Link
-            className="flex flex-col items-center justify-center relative group overflow-hidden p-6 lg:py-12 rounded-xl border-2 border-primary-100 dark:border-primary-800 bg-white dark:bg-gray-900 ring-transparent ring-2 hover:ring-primary-800 dark:hover:ring-primary-400 transition-all"
+            className="flex flex-col items-center justify-center relative group overflow-hidden p-6 lg:py-12 rounded-xl border-2 border-primary-100 bg-white ring-transparent ring-2 hover:ring-primary-800 transition-all"
             data-discover="true"
             to="/"
           >
-            <div className="z-20 p-8 space-y-12 duration-300 absolute top-0 w-full h-full bg-white/50 dark:bg-gray-900/70 backdrop-blur-md opacity-0 group-hover:opacity-100">
-              <h1 className="font-bold text-primary dark:text-primary-300 text-xl">
-                Harvesting, Threshing &amp; Storage
-              </h1>
-              <p className="text-base dark:text-gray-300">
+            <div className="z-20 p-8 space-y-12 duration-300 absolute top-0 w-full h-full bg-white/50 backdrop-blur-md opacity-0 group-hover:opacity-100">
+              <h1 className="font-bold text-primary text-xl">Harvesting, Threshing &amp; Storage</h1>
+              <p className="text-base">
                 Efficient harvesting, threshing, and storage are crucial for preserving crop quality and maximizing
                 yields. Our services include timely harvesting, efficient threshing, and proper storage techniques. We
                 use advanced equipment and techniques to minimize losses and ensure the highest quality produce.
@@ -202,13 +200,13 @@ export default function AgriSolutions() {
 
           {/* Post Harvesting */}
           <Link
-            className="flex flex-col items-center justify-center relative group overflow-hidden p-6 lg:py-12 rounded-xl border-2 border-primary-100 dark:border-primary-800 bg-white dark:bg-gray-900 ring-transparent ring-2 hover:ring-primary-800 dark:hover:ring-primary-400 transition-all"
+            className="flex flex-col items-center justify-center relative group overflow-hidden p-6 lg:py-12 rounded-xl border-2 border-primary-100 bg-white ring-transparent ring-2 hover:ring-primary-800 transition-all"
             data-discover="true"
             to="/"
           >
-            <div className="z-20 p-8 space-y-12 duration-300 absolute top-0 w-full h-full bg-white/50 dark:bg-gray-900/70 backdrop-blur-md opacity-0 group-hover:opacity-100">
-              <h1 className="font-bold text-primary dark:text-primary-300 text-xl">Post Harvesting</h1>
-              <p className="text-base dark:text-gray-300">
+            <div className="z-20 p-8 space-y-12 duration-300 absolute top-0 w-full h-full bg-white/50 backdrop-blur-md opacity-0 focus:border-blue-600 group-hover:opacity-100">
+              <h1 className="font-bold text-primary text-xl">Post Harvesting</h1>
+              <p className="text-base">
                 Post-harvesting activities are essential for preserving the quality and value of your crops. Our
                 services include cleaning, drying, grading, and packaging to prepare your produce for market. We
                 prioritize food safety and quality control to ensure that your products meet the highest standards.
@@ -226,4 +224,6 @@ export default function AgriSolutions() {
     </div>
   )
 }
+
+
 
