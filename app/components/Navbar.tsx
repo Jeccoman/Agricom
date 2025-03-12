@@ -1,20 +1,59 @@
-import agricom from "/public/Agricom.svg"; 
+import { Link } from "@remix-run/react";
+
+// Import the logo
+import agricom from "/public/Agricom.svg";
 
 const Navbar = () => {
   return (
-    <nav className=" bg-opacity-50 backdrop-blur-md sticky top-0 z-50 px-6">
-      <ul className="flex space-x-4 p-4 text-xs">
-      <li>
-          <a href="#home">
-            <img src={agricom} alt="Agricom" className="h-8" />
-          </a>
+    <nav className=" bg-opacity-80 dark:bg-opacity-80 backdrop-blur-md sticky top-0 z-50 px-6 shadow-sm transition-colors duration-200">
+      <div className="max-w-7xl mx-auto flex items-center justify-between">
+        <Link to="/" className="flex items-center ">
+          <img src={agricom || "/placeholder.svg"} alt="Agricom" className="h-8" />
+        </Link>
+        
+        <ul className="flex space-x-1 md:space-x-4 p-4 text-xs md:text-sm">
+          <li>
+            <Link 
+              to="/" 
+              className="text-gray-800 dark:text-gray-100 hover:text-primary dark:hover:text-primary-300 px-3 py-2 rounded transition-colors duration-200"
+            >
+              Home
+            </Link>
           </li>
-        <li><a href="#home" className="text-white  px-3 py-2 rounded">Home</a></li>
-        <li><a href="#about" className="text-white  px-3 py-2 rounded">About Us</a></li>
-        <li><a href="#services" className="text-white  px-3 py-2 rounded">Our Services</a></li>
-        <li><a href="#Blogs" className="text-white  px-3 py-2 rounded">Blogs</a></li>
-        <li><a href="#contact" className="text-white px-3 py-2 rounded">Locate Us</a></li>
-      </ul>
+          <li>
+            <Link 
+              to="/about" 
+              className="text-gray-800 dark:text-gray-100 hover:text-primary dark:hover:text-primary-300 px-3 py-2 rounded transition-colors duration-200"
+            >
+              About Us
+            </Link>
+          </li>
+          <li>
+            <Link 
+              to="/services" 
+              className="text-gray-800 dark:text-gray-100 hover:text-primary dark:hover:text-primary-300 px-3 py-2 rounded transition-colors duration-200"
+            >
+              Our Services
+            </Link>
+          </li>
+          <li>
+            <Link 
+              to="/blogs" 
+              className="text-gray-800 dark:text-gray-100 hover:text-primary dark:hover:text-primary-300 px-3 py-2 rounded transition-colors duration-200"
+            >
+              Blogs
+            </Link>
+          </li>
+          <li>
+            <Link 
+              to="/locate" 
+              className="text-gray-800 dark:text-gray-100 hover:text-primary dark:hover:text-primary-300 px-3 py-2 rounded transition-colors duration-200"
+            >
+              Locate Us
+            </Link>
+          </li>
+        </ul>
+      </div>
     </nav>
   );
 };
