@@ -44,7 +44,7 @@ export default function Achievements() {
         </h1>
         
         <p className="text-xl text-[#8a7e6e] mb-16 max-w-3xl mx-auto">
-          Setting the Standard for Success in Tanzania's Agricultural Sector
+          Setting the Standard for Success in Tanzania&apos;s Agricultural Sector
         </p>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
