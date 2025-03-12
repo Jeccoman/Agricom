@@ -9,7 +9,7 @@ import Partners from "~/components/Partners";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "Agricom | Farm Solutions" },
+    { title: "Agricom Africa" },
     { name: "description", content: "Tanzania's leading farm mechanization company" },
   ];
 };
