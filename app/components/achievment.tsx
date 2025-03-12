@@ -1,6 +1,6 @@
 import { Users, Trophy, Map, Sprout, Handshake, Building } from 'lucide-react';
 
-export default function Achievements() {
+export default function Achievement() {
   const achievements = [
     {
       icon: <Users className="w-16 h-16 text-green-700" />,
@@ -39,9 +39,9 @@ export default function Achievements() {
       <div className="max-w-5xl mx-auto text-center">
         <h1 className="text-green-800 uppercase tracking-wide text-sm font-semibold mb-4">ACHIEVEMENTS</h1>
         
-        <h2 className="text-4xl md:text-5xl font-bold text-green-900 mb-4 max-w-3xl mx-auto">
+        <h3 className="text-2xl md:text-5xl font-bold text-green-900 mb-4 max-w-3xl mx-auto">
           Leading the Way in Agricultural Excellence
-        </h2>
+        </h3>
         
         <p className="text-xl text-[#8a7e6e] mb-16 max-w-3xl mx-auto">
           Setting the Standard for Success in Tanzania&apos;s Agricultural Sector
