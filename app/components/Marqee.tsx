@@ -1,9 +1,7 @@
 import { useEffect } from 'react';
 
 export default function Marquee() {
-  // We need to add the animation styles to the document
   useEffect(() => {
-    // Check if the style already exists to avoid duplicates
     if (!document.getElementById('marquee-animation-style')) {
       const style = document.createElement('style');
       style.id = 'marquee-animation-style';
@@ -25,9 +23,9 @@ export default function Marquee() {
     }
   }, []);
 
-  // The star SVG component
   const StarIcon = () => (
     <svg 
+      color='yellow'
       width="14" 
       fill="none" 
       height="14" 
@@ -44,8 +42,7 @@ export default function Marquee() {
       />
     </svg>
   );
-
-  // Create a single marquee item
+ 
   const MarqueeItem = () => (
     <div className="flex items-center gap-12 whitespace-nowrap">
       <StarIcon />
@@ -53,7 +50,6 @@ export default function Marquee() {
     </div>
   );
 
-  // Create a row of items
   const MarqueeRow = () => (
     <div className="flex gap-12 px-6 animate-infinite-slide">
       {[...Array(5)].map((_, index) => (
@@ -63,7 +59,7 @@ export default function Marquee() {
   );
 
   return (
-    <div className="bg-primary-950 flex py-3 lg:py-6 max-w-screen overflow-hidden">
+    <div className="bg-green-950 flex py-3 lg:py-6 max-w-screen overflow-hidden">
       <MarqueeRow />
       <MarqueeRow />
     </div>
