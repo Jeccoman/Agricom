@@ -1,18 +1,9 @@
 import { Link } from "@remix-run/react"
-import type { MetaFunction } from "@remix-run/node"
-
-export const meta: MetaFunction = () => {
-  return [
-    { title: "Agricultural Solutions" },
-    { name: "description", content: "Complete solutions for farm mechanization" },
-  ]
-}
 
 export default function AgriSolutions() {
   return (
     <div className="min-h-screen bg-white text-gray-900">
       <section className="space-y-16 p-4 lg:px-24 lg:py-16">
-        {/* Header Section */}
         <div className="flex flex-col items-center justify-center space-y-2 text-center px-4">
           <div className="gap-1 rounded-full tracking-wide px-3 py-2 text-sm font-medium inline-flex items-center bg-primary-100 text-primary-600 ring-0 ring-inset ring-primary-600/5 uppercase whitespace-nowrap">
             Our Solutions
@@ -24,15 +15,12 @@ export default function AgriSolutions() {
             agricultural commodities and products at their doorstep.
           </p>
         </div>
-
-        {/* Agri Machinery Section */}
         <div className="flex flex-col items-center justify-center space-y-3 text-center">
           <p className="text-xl lg:text-2xl font-bold">Agri Machinery</p>
           <div className="w-16 h-1 bg-secondary"></div>
         </div>
 
         <div className="grid sm:grid-cols-2 gap-4">
-          {/* Tractors */}
           <Link
             className="flex flex-col items-center justify-center relative group overflow-hidden p-6 lg:py-12 rounded-xl border-2 border-primary-100 bg-white ring-transparent ring-2 hover:ring-primary-800 transition-all"
             data-discover="true"
@@ -54,8 +42,6 @@ export default function AgriSolutions() {
             />
             <p className="font-bold text-center lg:text-xl mt-4">Tractors</p>
           </Link>
-
-          {/* Combine Harvesters */}
           <Link
             className="flex flex-col items-center justify-center relative group overflow-hidden p-6 lg:py-12 rounded-xl border-2 border-primary-100 bg-white ring-transparent ring-2 hover:ring-primary-800 transition-all"
             data-discover="true"
@@ -78,15 +64,12 @@ export default function AgriSolutions() {
             <p className="font-bold text-center lg:text-xl mt-4">Combine Harvesters</p>
           </Link>
         </div>
-
-        {/* Agri Farm Implements Section */}
         <div className="flex flex-col items-center justify-center space-y-3 text-center">
           <p className="text-xl lg:text-2xl font-bold">Agri Farm Implements</p>
           <div className="w-16 h-1 bg-secondary"></div>
         </div>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-          {/* Land Preparation */}
           <Link
             className="flex flex-col items-center justify-center relative group overflow-hidden p-6 lg:py-12 rounded-xl border-2 border-primary-100 bg-white ring-transparent ring-2 hover:ring-primary-800 transition-all"
             data-discover="true"
@@ -108,7 +91,6 @@ export default function AgriSolutions() {
             <p className="font-bold text-center lg:text-xl mt-4">Land Preparation</p>
           </Link>
 
-          {/* Landscaping */}
           <Link
             className="flex flex-col items-center justify-center relative group overflow-hidden p-6 lg:py-12 rounded-xl border-2 border-primary-100 bg-white ring-transparent ring-2 hover:ring-primary-800 transition-all"
             data-discover="true"
@@ -130,8 +112,6 @@ export default function AgriSolutions() {
             />
             <p className="font-bold text-center lg:text-xl mt-4">Landscaping</p>
           </Link>
-
-          {/* Seeding & Planting */}
           <Link
             className="flex flex-col items-center justify-center relative group overflow-hidden p-6 lg:py-12 rounded-xl border-2 border-primary-100 bg-white ring-transparent ring-2 hover:ring-primary-800 transition-all"
             data-discover="true"
@@ -152,8 +132,6 @@ export default function AgriSolutions() {
             />
             <p className="font-bold text-center lg:text-xl mt-4">Seeding &amp; Planting</p>
           </Link>
-
-          {/* Crop Protection */}
           <Link
             className="flex flex-col items-center justify-center relative group overflow-hidden p-6 lg:py-12 rounded-xl border-2 border-primary-100 bg-white ring-transparent ring-2 hover:ring-primary-800 transition-all"
             data-discover="true"
@@ -175,8 +153,6 @@ export default function AgriSolutions() {
             />
             <p className="font-bold text-center lg:text-xl mt-4">Crop Protection</p>
           </Link>
-
-          {/* Harvesting, Threshing & Storage */}
           <Link
             className="flex flex-col items-center justify-center relative group overflow-hidden p-6 lg:py-12 rounded-xl border-2 border-primary-100 bg-white ring-transparent ring-2 hover:ring-primary-800 transition-all"
             data-discover="true"
@@ -197,8 +173,6 @@ export default function AgriSolutions() {
             />
             <p className="font-bold text-center lg:text-xl mt-4">Harvesting, Threshing &amp; Storage</p>
           </Link>
-
-          {/* Post Harvesting */}
           <Link
             className="flex flex-col items-center justify-center relative group overflow-hidden p-6 lg:py-12 rounded-xl border-2 border-primary-100 bg-white ring-transparent ring-2 hover:ring-primary-800 transition-all"
             data-discover="true"
