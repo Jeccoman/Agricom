@@ -1,3 +1,5 @@
+import { authenticator } from "~/services/auth.server";
+import type { LoaderArgs } from "@remix-run/node";
 export default function Partners() {
     const partners = [
       {
@@ -31,3 +33,13 @@ export default function Partners() {
       </section>
     );
   }
+
+
+
+
+  import useLoaderData from "remix-run/node"
+
+export const Loader = async () => {
+  const response = await fetch("https://api.example.com/partners");
+  const data 
+}
