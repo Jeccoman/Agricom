@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { Link } from "@remix-run/react"
-import agricom from "/public/Agricom.svg"
+
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -15,10 +15,10 @@ const Navbar = () => {
     <nav className="bg-opacity-80 dark:bg-opacity-80 backdrop-blur-md sticky top-0 z-50 px-6 shadow-sm transition-colors duration-200">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <Link to="/" className="flex items-center py-4">
-          <img src={agricom || "/placeholder.svg"} alt="Agricom" className="h-8" />
+          <img src="/Agricom.svg" alt="Agricom" className="h-8" />
         </Link>
         <button
-          className="md:hidden flex items-center p-2 rounded-md text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none"
+          className="md:hidden flex items-center p-2 rounded-md text-gray-700 dark:text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none"
           onClick={toggleMenu}
           aria-label="Toggle menu"
         >
