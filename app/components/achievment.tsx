@@ -54,7 +54,7 @@ export default function Achievements() {
                 {achievement.icon}
               </div>
               
-              <h3 className="text-3xl font-bold text-green-900 mb-2">
+              <h3 className="text-xl font-bold text-green-900 mb-2">
                 {achievement.value}
               </h3>
               
