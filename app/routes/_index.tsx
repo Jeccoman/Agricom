@@ -1,9 +1,10 @@
-// app/routes/_index.tsx (Main landing page route)
 import type { MetaFunction } from "@remix-run/node";
-
 import "swiper/css";
+import Achievements from "~/components/achievment";
 import Features from "~/components/Features";
 import Hero from "~/components/Hero";
+import Marquee from "~/components/Marqee";
+import Partners from "~/components/Partners";
 
 
 export const meta: MetaFunction = () => {
@@ -16,9 +17,11 @@ export const meta: MetaFunction = () => {
 export default function LandingPage() {
   return (
     <main className="font-sans">
-      {/* Hero Section with Swiper */}
       <Hero />  
       <Features />
+      <Achievements />
+      <Partners />
+      <Marquee />
      
     </main>
   );
