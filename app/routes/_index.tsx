@@ -1,6 +1,6 @@
 import type { MetaFunction } from "@remix-run/node";
 import "swiper/css";
-import Achievements from "~/components/Achievment";
+import Achievement from "~/components/Achievment";
 import Features from "~/components/Features";
 import Hero from "~/components/Hero";
 import Marquee from "~/components/Marqee";
@@ -19,7 +19,7 @@ export default function LandingPage() {
     <main className="font-sans">
       <Hero />  
       <Features />
-      <Achievements />
+      <Achievement />
       <Partners />
       <Marquee />
      
